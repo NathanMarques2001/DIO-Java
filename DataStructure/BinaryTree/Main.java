@@ -6,19 +6,22 @@ public class Main {
 
 		BinaryTree<Integer> arvore = new BinaryTree();
 		
-		arvore.insert(8);
-		arvore.insert(3);
-		arvore.insert(1);
-		arvore.insert(6);
-		arvore.insert(4);
-		arvore.insert(7);
-		arvore.insert(10);
-		arvore.insert(14);
 		arvore.insert(13);
+		arvore.insert(10);
+		arvore.insert(25);
+		arvore.insert(2);
+		arvore.insert(12);
+		arvore.insert(20);
+		arvore.insert(31);
+		arvore.insert(29);
 		
+		arvore.displayInOrder();
 		arvore.displayPreOrder();
 		arvore.displayPostOrder();
-		arvore.displayInOrder();
+		
+		arvore.remove(29);
+		
+		arvore.displayPreOrder();
 	}
 
 }
